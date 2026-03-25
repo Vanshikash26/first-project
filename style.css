@@ -6,9 +6,12 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem;
+    position: sticky;  
+    top: 0;            
+    background-color: #4CAF50;  
+    color: white;              
+    padding: 1rem;             
+    z-index: 1000;             
 }
 
 nav a {
@@ -29,15 +32,16 @@ form input, form textarea {
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    cursor: pointer;
+    padding: 10px 20px;   /* existing */
+    background-color: #4CAF50; /* existing */
+    border: none;          /* existing */
+    color: white;          /* existing */
+    cursor: pointer;       /* existing */
+    transition: 0.3s;      /* new for smooth hover */
 }
 
 button:hover {
-    background-color: #45a049;
+    transform: scale(1.05);  /* new hover effect */
 }
 
 footer {
